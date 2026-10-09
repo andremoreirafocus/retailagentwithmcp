@@ -1,0 +1,34 @@
+services:
+  # 1) MCP server (FastMCP + MySQL)
+  order-mcp:
+    build: ./mcp/services/order-mcp
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./mcp/.env
+    restart: unless-stopped
+
+  # 2) Backend API (FastAPI + LangChain agent calling the MCP server)
+  backend:
+    build: ./backend
+    ports:
+      - "8001:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      # in-network address of the order-mcp container (overrides backend/.env)
+      - ORDER_MCP_URL=http://order-mcp:8000/mcp
+      # reach Ollama running on the host (override with OLLAMA_BASE_URL=... if remote)
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+    depends_on:
+      - order-mcp
+    restart: unless-stopped
+
+  # 3) Frontend (React served by nginx, proxies /api to backend)
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
