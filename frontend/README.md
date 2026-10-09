@@ -39,6 +39,14 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173). Vite proxies requests starting with `/api` to `http://localhost:8001`, so the backend must be running on that port.
 
-## Docker
+## Nginx and Docker
 
-The Docker build creates static production files and serves them with Nginx on port `3000` through Docker Compose. Nginx proxies `/api` requests to the `backend` Compose service.
+For production, the Dockerfile first uses Node to run `npm run build`, which creates the static files in `dist/`. A second Nginx image copies those files into its web root and serves the application on port `80`; Docker Compose maps that port to `3000` on the host.
+
+The Nginx configuration has two important behaviors:
+
+- It serves the compiled React files from `/usr/share/nginx/html`.
+- It falls back to `index.html` for unknown paths, allowing React client-side routes to load correctly.
+- It proxies requests beginning with `/api/` to `http://backend:8000` on the internal Docker Compose network.
+
+This proxy means the browser makes requests to the same frontend origin, such as `http://localhost:3000/api/chat`, while Nginx forwards them to the FastAPI backend. The backend address is not exposed to the frontend JavaScript in the Docker deployment.
