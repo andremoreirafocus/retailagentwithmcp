@@ -2,6 +2,14 @@
 
 This service is the Order Management MCP server for the Retail Support Assistant. It exposes retail order operations as MCP tools that an LLM agent can call through the backend.
 
+## Architecture
+
+- `server.py` creates and starts the FastMCP server, registers MCP tool functions, and validates MCP requests.
+- `settings.py` loads and validates the MCP API key and database URL with Pydantic Settings.
+- `order_service.py` contains the `OrderService` class, which performs the MySQL queries and updates through its injected SQLAlchemy engine.
+
+This keeps configuration, MCP transport concerns, and database operations separate. The server has no module-level configuration, database engine, or tool dependencies.
+
 ## What it does
 
 - Connects to the MySQL retail database with SQLAlchemy.
@@ -36,7 +44,7 @@ cp mcp/.env.example mcp/.env
 
 ```env
 MCP_API_KEY=replace-with-a-shared-secret
-MYSQL_URL=mysql+pymysql://user:password@host:3306/retail_db
+DATABASE_URL=mysql+pymysql://user:password@host:3306/retail_db
 ```
 
 The backend must use the same `MCP_API_KEY` value. Its `ORDER_MCP_URL` should point to this service's `/mcp` endpoint.
