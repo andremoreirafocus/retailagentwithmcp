@@ -2,7 +2,7 @@
 
 This service is the API and agent layer for the Retail Support Assistant. It accepts chat messages from the frontend, uses an LLM to decide which order tool is relevant, and calls the Order Management MCP service to retrieve or change order data.
 
-The MCP service exposes the order tools the agent can use, including access to a orders database 
+The MCP service exposes the order tools the agent can use to access the orders database.
 
 ## What it does
 
@@ -22,7 +22,7 @@ The agent can use these MCP tools:
 - `cancel_order` to cancel pending or processing orders.
 - `return_order` to begin a return for a delivered order.
 
-Cancellation and return operations change order state. The agent is instructed to ask for confirmation before it calls either tool.
+Cancellation and return operations change order state. The system prompt instructs the agent to ask for confirmation before it calls either tool, but the application does not enforce a confirmation workflow.
 
 ## API
 
@@ -80,7 +80,7 @@ cp .env.example .env
 | Groq | `GROQ_API_KEY`, optionally `GROQ_MODEL` |
 | Ollama | `OLLAMA_BASE_URL`, `OLLAMA_MODEL` |
 
-Set `ORDER_MCP_URL` to the MCP endpoint. For local development, its usual value is `http://localhost:8000/mcp`. Docker Compose overrides it with the internal service address.
+Set `ORDER_MCP_URL` to the MCP endpoint. For local development, its usual value is `http://localhost:8000/mcp`. Docker Compose injects the internal service address, `http://order-mcp:8000/mcp`.
 
 ## Run locally
 
@@ -100,10 +100,10 @@ The MCP service must already be running and reachable. OpenAPI documentation is 
 From the repository root:
 
 ```bash
-docker compose up --build backend
+docker compose up --build
 ```
 
-The API is exposed on port `8001`. Compose configures the backend to call the `order-mcp` container at `http://order-mcp:8000/mcp`.
+The API is exposed on port `8001`. Compose starts MySQL, imports the database when needed, and configures the backend to call the `order-mcp` container at `http://order-mcp:8000/mcp`.
 
 ## Errors
 

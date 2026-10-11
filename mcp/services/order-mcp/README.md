@@ -28,7 +28,7 @@ This keeps configuration, MCP transport concerns, and database operations separa
 | `cancel_order` | Cancels an order when its status is `pending` or `processing`. |
 | `return_order` | Starts a return for a delivered order and requires a reason. |
 
-`cancel_order` and `return_order` update data in MySQL. The FastAPI agent layer is responsible for obtaining confirmation from the user before it calls them.
+`cancel_order` and `return_order` update data in MySQL. The backend's system prompt tells the agent to ask for confirmation before it calls them, but the MCP server does not enforce a confirmation workflow.
 
 ## Authentication
 
@@ -38,7 +38,9 @@ Every MCP request must include an `x-api-key` header that exactly matches `MCP_A
 
 The service environment contract is documented in `mcp/.env.example`. With Docker Compose, set `MCP_API_KEY` in the root `.env` file. Docker Compose supplies the server's `DATABASE_URL` from the same file's MySQL configuration and injects the API key into both the MCP server and backend.
 
-Its `ORDER_MCP_URL` should point to this service's `/mcp` endpoint.
+For a standalone run, copy `mcp/.env.example` to `mcp/.env` and set its values for the target database.
+
+The backend's `ORDER_MCP_URL` should point to this service's `/mcp` endpoint.
 
 ## Run locally
 
@@ -55,4 +57,4 @@ The server listens on `http://localhost:8000/mcp` using the streamable HTTP tran
 
 ## Docker
 
-Docker Compose builds this directory as the `order-mcp` service and exposes port `8000`. The `backend` service connects to it at `http://order-mcp:8000/mcp` on the internal Compose network.
+Docker Compose builds this directory as the `order-mcp` service and exposes port `8000`. The `backend` service connects to it at `http://order-mcp:8000/mcp` on the internal Compose network. Run the full Compose stack so MySQL and `db-init` are also started.
