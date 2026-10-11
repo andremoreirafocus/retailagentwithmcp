@@ -1,0 +1,33 @@
+id,name,category,description,price,ram,rating,stock,delivery_days,warranty_months,brand,sku,created_at
+10001,Apple MacBook Pro 14-inch M3 Pro,laptops,"14.2-inch Liquid Retina XDR display, M3 Pro chip, 18GB unified memory, 512GB SSD, up to 18 hours battery life",1999.00,18,4.8,23,3,12,Apple,MBP14-M3P-512,2026-07-17 01:08:25
+10002,Apple MacBook Air 15-inch M3,laptops,"15.3-inch Liquid Retina display, M3 chip, 16GB unified memory, 256GB SSD, fanless design",1299.00,16,4.7,35,2,12,Apple,MBA15-M3-256,2026-07-17 01:08:26
+10003,Dell XPS 15 9530,laptops,"15.6-inch OLED 3.5K display, Intel Core i7-13700H, 16GB DDR5, 512GB SSD, NVIDIA RTX 4050",1299.99,16,4.5,18,3,12,Dell,XPS15-9530-I7,2026-07-17 01:08:26
+10004,Lenovo ThinkPad X1 Carbon Gen 11,laptops,"14-inch WUXGA IPS, Intel Core i7-1365U, 16GB LPDDR5, 512GB SSD, MIL-STD-810H tested",1449.00,16,4.6,12,4,36,Lenovo,X1C-G11-I7,2026-07-17 01:08:26
+10005,HP Spectre x360 16,laptops,"16-inch 3K+ OLED touchscreen, Intel Core Ultra 7, 16GB DDR5, 1TB SSD, 2-in-1 convertible",1649.00,16,4.4,8,4,12,HP,SPECTRE-X360-16,2026-07-17 01:08:26
+10006,ASUS ROG Zephyrus G16,laptops,"16-inch QHD+ 240Hz OLED, Intel Core i9-14900HX, 32GB DDR5, 1TB RTX 4070",2199.00,32,4.7,5,5,12,ASUS,ROG-ZEPHY-G16,2026-07-17 01:08:27
+10007,Microsoft Surface Laptop 5 15-inch,laptops,"15-inch PixelSense touchscreen, Intel Core i7-1285U, 16GB LPDDR5x, 512GB SSD",1299.99,16,4.3,14,3,12,Microsoft,SURF-LAP5-15,2026-07-17 01:08:27
+10008,Apple iPhone 15 Pro Max 256GB,phones,"6.7-inch Super Retina XDR, A17 Pro chip, 48MP camera system, titanium design, USB-C",1199.00,8,4.8,42,2,12,Apple,IP15PM-256-TI,2026-07-17 01:08:27
+10009,Samsung Galaxy S24 Ultra 512GB,phones,"6.8-inch Dynamic AMOLED 2X, Snapdragon 8 Gen 3, 200MP camera, S Pen, titanium frame",1299.99,12,4.7,30,2,12,Samsung,GS24U-512-TI,2026-07-17 01:08:27
+10010,Google Pixel 8 Pro 256GB,phones,"6.7-inch LTPO OLED, Tensor G3, 50MP triple camera, 7 years of OS updates",999.00,12,4.6,25,2,24,Google,PIX8P-256,2026-07-17 01:08:28
+10011,OnePlus 12 256GB,phones,"6.82-inch LTPO AMOLED 120Hz, Snapdragon 8 Gen 3, 50MP Hasselblad camera, 5400mAh battery",799.99,16,4.5,20,3,12,OnePlus,OP12-256,2026-07-17 01:08:28
+10012,Apple iPhone 15 128GB,phones,"6.1-inch Super Retina XDR, A16 Bionic, 48MP main camera, Dynamic Island, USB-C",799.00,6,4.6,55,1,12,Apple,IP15-128,2026-07-17 01:08:28
+10013,Apple iPad Pro 12.9-inch M2 256GB,tablets,"12.9-inch Liquid Retina XDR, M2 chip, 8GB RAM, Thunderbolt/USB 4, Face ID, Apple Pencil hover",1099.00,8,4.8,16,3,12,Apple,IPADPRO-129-M2,2026-07-17 01:08:28
+10014,Samsung Galaxy Tab S9 Ultra 256GB,tablets,"14.6-inch Dynamic AMOLED 2X, Snapdragon 8 Gen 2, 12GB RAM, S Pen included, IP68",1199.99,12,4.6,10,3,12,Samsung,TAB-S9U-256,2026-07-17 01:08:29
+10015,Microsoft Surface Pro 9 i7 256GB,tablets,"13-inch PixelSense Flow 120Hz, Intel Core i7-1255U, 16GB RAM, Thunderbolt 4",1299.99,16,4.4,9,4,12,Microsoft,SURF-PRO9-I7,2026-07-17 01:08:29
+10016,Apple iPad Air M1 64GB Wi-Fi,tablets,"10.9-inch Liquid Retina, M1 chip, 64GB storage, Touch ID, USB-C, supports Apple Pencil 2",599.00,8,4.7,28,2,12,Apple,IPADAIR-M1-64,2026-07-17 01:08:29
+10017,LG UltraGear 34-inch OLED Gaming Monitor,monitors,"34-inch WQHD OLED, 240Hz, 0.03ms response time, NVIDIA G-Sync, 98.5% DCI-P3",1299.99,0,4.7,7,5,24,LG,UG34-OLED-240,2026-07-17 01:08:29
+10018,Dell UltraSharp 27 4K USB-C Hub Monitor U2723QE,monitors,"27-inch 4K IPS Black, USB-C 90W PD, 100% sRGB, 98% DCI-P3, KVM switch, VESA DisplayHDR 400",619.99,0,4.5,22,3,36,Dell,DS27-4K-U2723,2026-07-17 01:08:30
+10019,Samsung ViewFinity S9 27-inch 5K,monitors,"27-inch 5K IPS, 5120x2880, 99% DCI-P3, Thunderbolt 4, built-in 4K webcam",1399.99,0,4.4,4,5,36,Samsung,S9-5K-27,2026-07-17 01:08:30
+10020,ASUS ProArt Display PA279CRV 27-inch 4K,monitors,"27-inch 4K IPS, Calman Verified, 99% Adobe RGB, 99% DCI-P3, USB-C 96W PD",549.00,0,4.6,15,3,36,ASUS,PROART-PA279,2026-07-17 01:08:30
+10021,Sony WH-1000XM5 Wireless Noise Cancelling Headphones,audio,"Industry-leading noise cancellation, 30-hour battery, multipoint connection, Speak-to-Chat",349.99,0,4.8,45,2,12,Sony,SONY-XM5,2026-07-17 01:08:30
+10022,Apple AirPods Pro 2nd Generation USB-C,audio,"Active Noise Cancellation, Adaptive Transparency, Personalized Spatial Audio, USB-C, MagSafe charging",249.00,0,4.7,60,1,12,Apple,AIRPODS-PRO2-USB-C,2026-07-17 01:08:31
+10023,Jabra Evolve2 75 Wireless Headset,audio,"Professional wireless headset, ANC, 36-hour battery, integrated busylight, Microsoft Teams certified",279.99,0,4.5,18,3,24,Jabra,EVO2-75,2026-07-17 01:08:31
+10024,Bose QuietComfort Ultra Headphones,audio,"World-class noise cancellation, Immersive Audio, CustomTune technology, 24-hour battery",429.00,0,4.6,12,3,12,Bose,BOSE-QC-ULTRA,2026-07-17 01:08:31
+10025,Logitech MX Master 3S Wireless Mouse,accessories,"8000 DPI sensor, quiet clicks, MagSpeed scroll wheel, USB-C quick charging, Flow cross-computer control",99.99,0,4.7,80,2,24,Logitech,MX-MASTER-3S,2026-07-17 01:08:31
+10026,Keychron Q1 Pro Mechanical Keyboard,accessories,"75% layout, wireless Bluetooth/USB-C, hot-swappable, Gateron Jupiter switches, aluminum frame",199.00,0,4.6,32,3,12,Keychron,Q1-PRO,2026-07-17 01:08:31
+10027,CalDigit TS4 Thunderbolt 4 Dock,accessories,"18 ports, 98W charging, Thunderbolt 4, 3x USB-C, 5x USB-A, SD/microSD, 2.5Gb Ethernet, audio",399.99,0,4.5,14,3,24,CalDigit,TS4-DOCK,2026-07-17 01:08:32
+10028,Samsung T7 Portable SSD 2TB,storage,"External SSD, USB 3.2 Gen 2, 1050MB/s read, 1000MB/s write, hardware encryption, shock resistant",159.99,0,4.7,48,2,36,Samsung,T7-2TB,2026-07-17 01:08:32
+10029,SanDisk Extreme Pro 1TB CFexpress Type B,storage,"CFexpress card, 1700MB/s read, 1400MB/s write, VPG 400 rated, for professional photography/video",229.99,0,4.8,10,3,12,SanDisk,SDXP-CFX-1TB,2026-07-17 01:08:32
+10030,WD Black SN850X 2TB NVMe SSD,storage,"Internal NVMe M.2, 7300MB/s read, 6600MB/s write, PCIe Gen 4, heatsink included",149.99,0,4.7,35,2,60,Western Digital,SN850X-2TB,2026-07-17 01:08:32
+10031,Microsoft 365 Business Standard (Annual),software,"Office apps, Exchange email, Teams, SharePoint, OneDrive 1TB, up to 300 users",150.00,0,4.4,999,0,12,Microsoft,M365-BIZ-STD,2026-07-17 01:08:33
+10032,Adobe Creative Cloud All Apps (Annual),software,"Photoshop, Illustrator, Premiere Pro, After Effects, 100GB cloud storage, Adobe Fonts",599.88,0,4.5,999,0,12,Adobe,CC-ALLAPPS,2026-07-17 01:08:33

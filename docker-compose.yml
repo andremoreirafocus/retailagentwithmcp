@@ -1,4 +1,16 @@
 services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: retail_db
+      MYSQL_USER: retail_user
+      MYSQL_PASSWORD: retail_password
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
   # 1) MCP server (FastMCP + MySQL)
   order-mcp:
     build: ./mcp/services/order-mcp
@@ -32,3 +44,6 @@ services:
     depends_on:
       - backend
     restart: unless-stopped
+
+volumes:
+  mysql_data:

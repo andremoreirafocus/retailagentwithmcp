@@ -1,0 +1,61 @@
+id,customer_id,status,total_amount,tracking_number,shipping_address,priority,notes,created_at,updated_at
+100001,50003,pending,657.86,,"321 Elm Street, Seattle, WA 98101",low,,2026-05-30 00:25:34,2026-05-30 00:25:34
+100002,50002,returned,4523.26,,"789 Pine Road, Austin, TX 73301",critical,Customer reported defective/damaged item,2026-07-08 17:22:34,2026-07-09 17:22:34
+100003,50002,shipped,1790.91,9400174757304822299690,"789 Pine Road, Austin, TX 73301",high,Express shipping requested — extra charge applied,2026-05-17 23:41:34,2026-05-19 23:41:34
+100004,50004,delivered,3732.75,858130341080,"357 Magnolia Path, Charlotte, NC 28201",high,Fragile — handle with care,2026-06-03 06:43:34,2026-06-06 06:43:34
+100005,50009,delivered,2330.91,422006847140,"258 Walnut Way, Portland, OR 97201",low,Price match guarantee applied,2026-06-04 14:48:34,2026-06-11 14:48:34
+100006,50003,shipped,2707.83,1ZLMQN2NISY06DVZ07,"369 Spruce Court, Miami, FL 33101",high,Customer wants to add items before shipment,2026-06-19 07:28:34,2026-06-20 07:28:34
+100007,50007,processing,506.77,,"852 Ash Circle, Dallas, TX 75201",medium,Customer requested cancellation within 24h window,2026-07-08 02:55:34,2026-07-08 02:55:34
+100008,50005,pending,1304.91,,"456 Oak Avenue, Suite 200, San Francisco, CA 94102",medium,Price match guarantee applied,2026-05-25 19:14:34,2026-05-25 19:14:34
+100009,50004,processing,1304.91,,"123 Main St, Apt 4B, New York, NY 10001",medium,Express shipping requested — extra charge applied,2026-07-13 06:38:34,2026-07-13 06:38:34
+100010,50002,pending,1737.97,,"258 Walnut Way, Portland, OR 97201",high,,2026-07-09 20:01:34,2026-07-09 20:01:34
+100011,50008,cancelled,1787.66,,"123 Main St, Apt 4B, New York, NY 10001",high,Fragile — handle with care,2026-05-31 11:50:34,2026-05-31 11:50:34
+100012,50010,pending,2869.82,,"123 Main St, Apt 4B, New York, NY 10001",medium,,2026-07-01 18:32:34,2026-07-01 18:32:34
+100013,50005,delivered,925.83,9400755412366666351115,"258 Walnut Way, Portland, OR 97201",medium,Split shipment approved — remaining items backordered,2026-07-04 23:04:34,2026-07-09 23:04:34
+100014,50002,delivered,4943.40,1ZM4MUHWOCAK5FB7F9,"357 Magnolia Path, Charlotte, NC 28201",medium,Corporate bulk order — PO #CORP-2024-0847,2026-07-06 19:50:34,2026-07-12 19:50:34
+100015,50004,pending,2191.55,,"369 Spruce Court, Miami, FL 33101",high,Defective unit reported — replacement authorized,2026-07-08 17:08:34,2026-07-08 17:08:34
+100016,50006,pending,2870.88,,"852 Ash Circle, Dallas, TX 75201",medium,,2026-06-23 11:25:34,2026-06-23 11:25:34
+100017,50010,returned,1196.91,,"852 Ash Circle, Dallas, TX 75201",high,Customer wants to add items before shipment,2026-06-03 08:44:34,2026-06-04 08:44:34
+100018,50002,cancelled,506.77,,"789 Pine Road, Austin, TX 73301",high,,2026-05-31 18:36:34,2026-06-02 18:36:34
+100019,50002,shipped,2147.04,1ZRGEYEEHENJ55JQYM,"123 Main St, Apt 4B, New York, NY 10001",high,,2026-07-03 20:09:34,2026-07-04 20:09:34
+100020,50003,returned,1521.98,,"963 Poplar Avenue, Phoenix, AZ 85001",medium,Customer called to confirm address change,2026-06-19 11:16:34,2026-06-20 11:16:34
+100021,50010,processing,117.98,,"987 Cedar Lane, Boston, MA 02101",high,Split shipment approved — remaining items backordered,2026-06-04 03:09:34,2026-06-04 03:09:34
+100022,50010,shipped,3897.96,1ZQPQTKHUQM33YGN6H,"456 Oak Avenue, Suite 200, San Francisco, CA 94102",critical,Corporate bulk order — PO #CORP-2024-0847,2026-06-17 19:11:34,2026-06-20 19:11:34
+100023,50006,delivered,387.98,7489855223209149,"258 Walnut Way, Portland, OR 97201",low,Fragile — handle with care,2026-07-17 02:07:34,2026-07-22 02:07:34
+100024,50009,delivered,1758.49,252145982160,"147 Birch Blvd, Denver, CO 80201",medium,Customer called to confirm address change,2026-05-19 00:11:34,2026-05-26 00:11:34
+100025,50012,cancelled,1521.98,,"741 Willow Place, Atlanta, GA 30301",critical,Customer requested cancellation within 24h window,2026-05-31 12:36:34,2026-06-01 12:36:34
+100026,50012,processing,2708.90,,"147 Birch Blvd, Denver, CO 80201",high,Fragile — handle with care,2026-05-20 04:22:34,2026-05-20 04:22:34
+100027,50006,delivered,1716.37,1ZCCIH5I01PU7TND4W,"357 Magnolia Path, Charlotte, NC 28201",medium,,2026-05-28 05:56:34,2026-06-03 05:56:34
+100028,50007,shipped,117.98,7489109147563777,"357 Magnolia Path, Charlotte, NC 28201",high,Fragile — handle with care,2026-07-01 16:18:34,2026-07-03 16:18:34
+100029,50010,cancelled,6107.67,,"654 Maple Drive, Chicago, IL 60601",critical,Customer requested cancellation within 24h window,2026-06-03 18:32:34,2026-06-04 18:32:34
+100030,50001,shipped,6054.71,525496618715,"369 Spruce Court, Miami, FL 33101",medium,Price match guarantee applied,2026-06-21 23:27:34,2026-06-22 23:27:34
+100031,50007,processing,1788.75,,"486 Sycamore Trail, San Diego, CA 92101",high,Express shipping requested — extra charge applied,2026-06-05 01:16:34,2026-06-05 01:16:34
+100032,50001,shipped,182.78,7489179792593312,"789 Pine Road, Austin, TX 73301",high,Price match guarantee applied,2026-07-13 15:52:34,2026-07-15 15:52:34
+100033,50002,delivered,4220.89,7489743147507120,"486 Sycamore Trail, San Diego, CA 92101",critical,Customer requested gift wrapping,2026-05-30 00:17:34,2026-06-05 00:17:34
+100034,50010,returned,4470.35,,"654 Maple Drive, Chicago, IL 60601",low,Customer has account-level free shipping,2026-07-15 00:15:34,2026-07-15 00:15:34
+100035,50008,delivered,3593.39,1ZPR054N4G0VJLPIXY,"741 Willow Place, Atlanta, GA 30301",high,Corporate bulk order — PO #CORP-2024-0847,2026-05-25 01:49:34,2026-05-30 01:49:34
+100036,50010,shipped,3616.07,9400482090373211168254,"258 Walnut Way, Portland, OR 97201",high,Split shipment approved — remaining items backordered,2026-06-21 23:01:34,2026-06-23 23:01:34
+100037,50010,delivered,4067.54,617162116388,"147 Birch Blvd, Denver, CO 80201",medium,,2026-06-02 12:37:34,2026-06-07 12:37:34
+100038,50002,delivered,2018.76,1Z90VOG3S5UWVZ8SU2,"486 Sycamore Trail, San Diego, CA 92101",medium,Corporate bulk order — PO #CORP-2024-0847,2026-05-20 05:30:34,2026-05-27 05:30:34
+100039,50004,delivered,2492.90,890523063322,"456 Oak Avenue, Suite 200, San Francisco, CA 94102",medium,Express shipping requested — extra charge applied,2026-07-05 08:51:34,2026-07-11 08:51:34
+100040,50012,delivered,224.91,9400570871661041029951,"159 Holly Street, Nashville, TN 37201",medium,Express shipping requested — extra charge applied,2026-06-10 11:23:34,2026-06-16 11:23:34
+100041,50012,returned,796.21,,"456 Oak Avenue, Suite 200, San Francisco, CA 94102",high,Customer wants to add items before shipment,2026-07-15 03:34:34,2026-07-17 03:34:34
+100042,50002,delivered,3678.75,7489962457060742,"852 Ash Circle, Dallas, TX 75201",medium,Customer has account-level free shipping,2026-06-16 15:21:34,2026-06-23 15:21:34
+100043,50009,delivered,3788.88,7489364833509276,"963 Poplar Avenue, Phoenix, AZ 85001",low,Corporate bulk order — PO #CORP-2024-0847,2026-06-04 20:06:34,2026-06-09 20:06:34
+100044,50010,delivered,819.86,681411935619,"258 Walnut Way, Portland, OR 97201",critical,Price match guarantee applied,2026-07-12 09:43:34,2026-07-18 09:43:34
+100045,50004,delivered,1985.30,852810680930,"123 Main St, Apt 4B, New York, NY 10001",medium,Customer wants to add items before shipment,2026-05-29 20:11:34,2026-06-03 20:11:34
+100046,50005,delivered,2004.75,7489012830199140,"357 Magnolia Path, Charlotte, NC 28201",high,Fragile — handle with care,2026-05-29 04:52:34,2026-06-03 04:52:34
+100047,50005,processing,278.91,,"258 Walnut Way, Portland, OR 97201",medium,Customer requested cancellation within 24h window,2026-07-03 15:13:34,2026-07-03 15:13:34
+100048,50005,delivered,2383.83,224393943049,"147 Birch Blvd, Denver, CO 80201",high,Corporate bulk order — PO #CORP-2024-0847,2026-05-28 09:53:34,2026-06-03 09:53:34
+100049,50008,cancelled,5903.52,,"486 Sycamore Trail, San Diego, CA 92101",high,Price match guarantee applied,2026-07-14 00:45:34,2026-07-14 00:45:34
+100050,50001,pending,2546.90,,"369 Spruce Court, Miami, FL 33101",high,Customer requested gift wrapping,2026-07-12 09:03:34,2026-07-12 09:03:34
+100051,50010,delivered,1303.83,9400895796681424629125,"258 Walnut Way, Portland, OR 97201",high,Customer wants to add items before shipment,2026-06-07 18:33:34,2026-06-11 18:33:34
+100052,50009,returned,1608.37,,"987 Cedar Lane, Boston, MA 02101",critical,Price match guarantee applied,2026-07-02 01:59:34,2026-07-04 01:59:34
+100053,50012,delivered,1412.91,155934033555,"123 Main St, Apt 4B, New York, NY 10001",medium,Express shipping requested — extra charge applied,2026-05-21 14:05:34,2026-05-28 14:05:34
+100054,50011,shipped,581.30,263794063369,"741 Willow Place, Atlanta, GA 30301",medium,Defective unit reported — replacement authorized,2026-05-17 15:58:34,2026-05-19 15:58:34
+100055,50002,delivered,2061.85,1ZTPJQ9SED1VR71QRW,"852 Ash Circle, Dallas, TX 75201",medium,,2026-07-15 16:56:34,2026-07-19 16:56:34
+100056,50007,cancelled,1413.98,,"321 Elm Street, Seattle, WA 98101",medium,Customer wants to add items before shipment,2026-06-02 13:39:34,2026-06-03 13:39:34
+100057,50003,pending,1413.98,,"741 Willow Place, Atlanta, GA 30301",medium,Express shipping requested — extra charge applied,2026-06-09 01:30:34,2026-06-09 01:30:34
+100058,50007,shipped,6162.72,1Z34CWUSJKFJ1POJUT,"741 Willow Place, Atlanta, GA 30301",critical,,2026-06-21 17:17:34,2026-06-22 17:17:34
+100059,50012,delivered,2546.91,7489609030586547,"357 Magnolia Path, Charlotte, NC 28201",medium,Express shipping requested — extra charge applied,2026-06-11 13:52:34,2026-06-16 13:52:34
+100060,50002,delivered,4868.89,1ZCMMUSTIZOHE3X05R,"486 Sycamore Trail, San Diego, CA 92101",high,Corporate bulk order — PO #CORP-2024-0847,2026-06-04 22:01:34,2026-06-07 22:01:34
