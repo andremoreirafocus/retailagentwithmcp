@@ -24,7 +24,7 @@ Browser ──> React (:5173) ──/api──> FastAPI (:8001) ──streamable
 1. **React frontend** presents the chat interface, sends messages to the backend, and displays the assistant's reply and MCP health status. See the [frontend README](frontend/README.md).
 2. **FastAPI backend** receives chat requests, supplies conversation history to a LangChain agent, and connects that agent to the MCP tools. It can use Groq or a local/remote Ollama model. See the [backend README](backend/README.md).
 3. **Order Management MCP server** exposes authenticated order tools, such as order tracking, shipping status, refunds, cancellations, and returns. It queries and updates the MySQL retail database. See the [MCP server README](mcp/services/order-mcp/README.md).
-4. **MySQL** stores customers, orders, order items, and products. It is an external dependency configured through `mcp/.env`.
+4. **MySQL** stores customers, orders, order items, and products. Docker Compose reads its configuration and the shared MCP API key from the root `.env` file.
 
 For a typical request, the browser sends a question to `POST /api/chat`; the backend's agent decides whether it needs an order tool; the MCP server executes the database operation; and the agent returns a customer-friendly answer to the browser.
 

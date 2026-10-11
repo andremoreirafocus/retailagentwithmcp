@@ -36,18 +36,9 @@ Every MCP request must include an `x-api-key` header that exactly matches `MCP_A
 
 ## Configuration
 
-Create `mcp/.env` from the example file and provide the API key and MySQL connection URL:
+The service environment contract is documented in `mcp/.env.example`. With Docker Compose, set `MCP_API_KEY` in the root `.env` file. Docker Compose supplies the server's `DATABASE_URL` from the same file's MySQL configuration and injects the API key into both the MCP server and backend.
 
-```bash
-cp mcp/.env.example mcp/.env
-```
-
-```env
-MCP_API_KEY=replace-with-a-shared-secret
-DATABASE_URL=mysql+pymysql://user:password@host:3306/retail_db
-```
-
-The backend must use the same `MCP_API_KEY` value. Its `ORDER_MCP_URL` should point to this service's `/mcp` endpoint.
+Its `ORDER_MCP_URL` should point to this service's `/mcp` endpoint.
 
 ## Run locally
 

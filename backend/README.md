@@ -65,7 +65,9 @@ Accepts a user message and optional recent chat history, then returns the agent'
 
 ## Configuration
 
-Copy the example file and set the required values:
+With Docker Compose, configure the backend values in the root `.env` file. `backend/.env.example` documents the backend environment contract.
+
+For direct execution, copy the example file and set the required values:
 
 ```bash
 cp .env.example .env

@@ -27,13 +27,13 @@ OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5:3b")
 OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 
 if LLM_PROVIDER not in ("groq", "ollama"):
-    raise RuntimeError("LLM_PROVIDER must be 'groq' or 'ollama' (backend/.env).")
+    raise RuntimeError("LLM_PROVIDER must be 'groq' or 'ollama'.")
 
 if LLM_PROVIDER == "groq" and not os.environ.get("GROQ_API_KEY"):
-    raise RuntimeError("GROQ_API_KEY is not set. Add it to backend/.env or the environment.")
+    raise RuntimeError("GROQ_API_KEY is not set.")
 
 if not MCP_API_KEY:
-    raise RuntimeError("MCP_API_KEY is not set. Add it to backend/.env or the environment.")
+    raise RuntimeError("MCP_API_KEY is not set.")
 
 
 def build_model():
