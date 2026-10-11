@@ -23,6 +23,7 @@ def create_mcp_server(settings: Settings) -> FastMCP:
     async def track_order(order_id: str, ctx: Context) -> str:
         """Track an order by its ID. Returns order status, total, tracking number, items, and priority."""
         order_id_value = _authorize_and_parse_id(order_id, ctx, settings.mcp_api_key, "Order ID")
+        _log_request_context(ctx)
         logger.info("[TOOL] track_order(order_id=%d)", order_id_value)
         return service.track_order(order_id_value)
 
@@ -63,6 +64,24 @@ def create_mcp_server(settings: Settings) -> FastMCP:
         return service.order_history(customer_id_value)
 
     return mcp
+
+
+def _log_request_context(ctx: Context) -> None:
+    """Log useful HTTP request metadata without logging credential values."""
+
+    request = ctx.request_context.request
+    client = getattr(request, "client", None)
+    url = getattr(request, "url", None)
+    headers = getattr(request, "headers", {})
+    logger.debug(
+        "[MCP] request_id=%s client_id=%s method=%s path=%s client=%s headers=%s",
+        ctx.request_id,
+        ctx.client_id,
+        getattr(request, "method", None),
+        getattr(url, "path", None),
+        getattr(client, "host", None),
+        sorted(headers.keys()),
+    )
 
 
 def _authorize_and_parse_id(raw_id: str, ctx: Context, api_key: str, label: str) -> int:
